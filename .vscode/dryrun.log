@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/vhvictor1/trab1-OAC'
+~ gcc main.c ; ./a.out
+make: Leaving directory '/home/vhvictor1/trab1-OAC'
+ 
