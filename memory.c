@@ -1,8 +1,15 @@
+// Nome: Victor Hugo da Silva de Oliveira.
+// Matrícula: 190129794.
+// Description: Trabalho 1 de OAC.
 #include <stdint.h> 
 #include <stdio.h>
+// Definição do tamanho máximo da memória e do nosso vetor de memória.{linhas: 8-9}
 #define MEM_SIZE 4096
 int32_t mem[MEM_SIZE];
-
+// Criação da função loadword utilizada para mostrar uma palavra de 8 bytes no nosso array,
+// lembrando que o Endereço é a soma da variável address e da constante (kte) e o primeiro
+// bit da nossa palavra vai ser um número divisível por 4 em todas as vezes.
+// {linhas: 13-23}.
 int32_t lw(uint32_t address, int32_t kte)
 {
     if ((address + kte) % 4 == 0)
@@ -15,7 +22,9 @@ int32_t lw(uint32_t address, int32_t kte)
         return 0;
     }
 };
-
+// Criação da função loadbyte utilizada para mostrar um byte no nosso array, nesse caso
+// fizemos um ponteiro (pointer) que ira armazenar o valor do array memória e utilizamos
+// outra variável para armazenar o valor que está em pointer. {linhas: 28-35}.
 int32_t lb(uint32_t address, int32_t kte)
 {
     int8_t *pointer;
@@ -24,7 +33,11 @@ int32_t lb(uint32_t address, int32_t kte)
     lastByte = *(pointer + (address + kte));
     return lastByte;
 };
-
+// Criação da função loadbyteUnitary utilizada para mostrar um byte no nosso array, nesse caso
+// fizemos um ponteiro (pointer) que ira armazenar o valor do array memória e utilizamos
+// outra variável para armazenar o valor que está em pointer, porém neste caso precisamos
+// retornar o valor sem o sinal então criamos uma máscara para fazer essa função.
+// {linhas: 41-49}.
 int32_t lbu(uint32_t address, int32_t kte)
 {
     int8_t *pointer;
