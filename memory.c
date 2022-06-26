@@ -5,8 +5,8 @@ int32_t mem[MEM_SIZE];
 
 int main()
 {
-    int b0, b1, b2, b3, b4, b5, b6, b7;
-    int b8, b9, b10, b11;
+    int8_t b0, b1, b2, b3, b4, b5, b6, b7;
+    int8_t b8, b9, b10, b11;
 
     scanf("%hhx, %hhx, %hhx, %hhx", &b0, &b1, &b2, &b3);
     scanf("%hhx, %hhx, %hhx, %hhx", &b4, &b5, &b6, &b7);
