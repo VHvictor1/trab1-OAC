@@ -114,4 +114,4 @@ int main()
     printf("%.8x\n", lw(16, 0));
     printf("%.8x\n", lw(20, 0));
 };
-// ©Código feito por Victor Hugo da Silva de Oliveira, não dever ser copiado, deve ser usado apenas para estudos.
+// Código feito por Victor Hugo da Silva de Oliveira, não dever ser copiado, deve ser usado apenas para estudos.
